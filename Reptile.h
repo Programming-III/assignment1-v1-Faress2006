@@ -1,16 +1,9 @@
-#ifndef REPTILE_H
-#define REPTILE_H
+class Reptile : public Animal {
+private:
+    bool isVenomous;
 
-#include "Animal.h"
+public:
+    Reptile(string n, int a, bool hungry, bool venom);
+    void display() override;
+};
 
-//define reptile class here
-
-
-
-
-
-
-
-
-
-#endif
