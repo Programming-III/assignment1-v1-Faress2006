@@ -1,13 +1,8 @@
-#ifndef MAMMAL_H
-#define MAMMAL_H
+class Mammal : public Animal {
+private:
+    string furColor;
 
-#include "Animal.h"
-
-//define mammal class here
-
-
-
-
-
-
-#endif
+public:
+    Mammal(string n, int a, bool hungry, string color);
+    void display() override;
+};
