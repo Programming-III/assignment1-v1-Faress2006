@@ -23,7 +23,6 @@ public:
     bool getHungry() const;
 };
 
-// ---- Subclasses ----
 
 class Mammal : public Animal {
 private:
@@ -52,5 +51,4 @@ public:
     void display() override;
 };
 
-#endif
 
