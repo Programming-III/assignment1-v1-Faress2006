@@ -4,7 +4,7 @@
 #include "Visitor.h"
 using namespace std;
 
-// ===== Animal Base =====
+
 Animal::Animal(string n, int a, bool hungry) {
     name = n;
     age = a;
@@ -29,7 +29,6 @@ string Animal::getName() const { return name; }
 int Animal::getAge() const { return age; }
 bool Animal::getHungry() const { return isHungry; }
 
-// ===== Mammal =====
 Mammal::Mammal(string n, int a, bool hungry, string color)
     : Animal(n, a, hungry) {
     furColor = color;
@@ -41,7 +40,6 @@ void Mammal::display() {
     cout << "----------------------------------\n";
 }
 
-// ===== Bird =====
 Bird::Bird(string n, int a, bool hungry, float span)
     : Animal(n, a, hungry) {
     wingSpan = span;
@@ -53,7 +51,6 @@ void Bird::display() {
     cout << "----------------------------------\n";
 }
 
-// ===== Reptile =====
 Reptile::Reptile(string n, int a, bool hungry, bool venom)
     : Animal(n, a, hungry) {
     isVenomous = venom;
@@ -95,7 +92,6 @@ void Enclosure::displayAnimals() {
     }
 }
 
-// ===== Visitor =====
 Visitor::Visitor(string name, int tickets) {
     visitorName = name;
     ticketsBought = tickets;
@@ -108,7 +104,6 @@ void Visitor::displayInfo() {
     cout << "===========================\n";
 }
 
-// ===== MAIN =====
 int main() {
     Enclosure zoo(3);
 
