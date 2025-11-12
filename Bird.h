@@ -1,14 +1,9 @@
-#ifndef BIRD_H
-#define BIRD_H
+class Bird : public Animal {
+private:
+    float wingSpan;
 
-#include "Animal.h"
+public:
+    Bird(string n, int a, bool hungry, float span);
+    void display() override;
+};
 
-//define class bird here 
-
-
-
-
-
-
-
-#endif
